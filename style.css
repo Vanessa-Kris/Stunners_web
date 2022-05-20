@@ -1,71 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: rgb(124, 71, 120);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+}
 
+
+
+  .w-100 {
+    width: 100% !important;
+    height: 90vh;
+  }
+  @media (min-width: 1200px){
+  .responsive-font {
+    font-size: 40px;
+    padding: 20px;
+    padding-top: 30px;
   }
 }
+@media (max-width: 1199.98px) {
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    .responsive-font{
+        font-size: 20px;
+        padding: 20px;
+        padding-top: 30px;
+    }
+
+    .w-100 {
+        width: 100% !important;
+        height: 50vh;
+    }
+
 }
-a{
-    text-decoration: none;
-}
-.hero{
-    width: 100%;
-    height: 100vh;
-    /* background: linear-gradient(120deg, #3256a3 20.69%, #3681f0 50.19%,#2daccc 79.69%, #bdddf3 85.75%); */
-    background-color: #936AB4;
-     background-image: url(images/LOS\ ANGELES\ PRODUCT\ PHOTOGRAPHER\ —\ Michelle\ Monique.png);
-    background-size: 100%;
-    background-position: right;
-    background-repeat: no-repeat;
-    opacity: 40%;
-}
+
+.user-img{
+    padding-top: 6px;
     
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   /* padding: 30px 60px;
-    background-color: #741986;*/
 }
-.logo{
-    max-height: 100px;
+#store {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 100vh;
 }
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 20px;
-}
-nav ul li a{
-    color: #f7f7fc;
-    font-weight: 20px;
+.container-fluid .card {
     position: relative;
-    padding: 5px 0;
-}
-nav ul li a:hover{
-    color: #8e5291;
-}
-nav ul li a:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: #8e5291;
-    transition: .3s;
-    bottom: 0;
-}
-nav ul li a:hover:after{
-    width: 100%;
+	height: 500px;
+	margin: 20px;
+	transition: 0.5s;
 }
